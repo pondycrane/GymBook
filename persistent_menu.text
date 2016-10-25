@@ -1,0 +1,16 @@
+curl -X POST -H "Content-Type: application/json" -d '{
+  "setting_type" : "call_to_actions",
+  "thread_state" : "existing_thread",
+  "call_to_actions":[
+    {
+      "type":"postback",
+      "title":"View Booking",
+      "payload":"VIEW_BOOKING"
+    },
+    {
+      "type":"postback",
+      "title":"Start a New Booking",
+      "payload":"NEW_BOOKING"
+    }
+  ]
+}' "https://graph.facebook.com/v2.6/me/thread_settings?access_token=EAAJCf6RmZAg8BALFxm8Q1ZADXmMZBNsdHP7ZAKjuD4lctRDLmIvYMG31L5qymMUmaoNwAM75kwHDZCGBVsobc7YgitoKoimlfEa2oClyZBWu1NujbyluZAsIDdQr5JVGWZA7sl0bxYH61J3hz3nes5zZBV9NfbpAI5fYlyko4wH4MFgZDZD"
